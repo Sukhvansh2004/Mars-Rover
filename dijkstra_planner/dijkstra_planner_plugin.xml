@@ -1,0 +1,5 @@
+<library path="lib/libdijkstra_planner">
+    <class name="dijkstra_planner/DijkstraPlanner" type="dijkstra_planner::DijkstraPlanner" base_class_type="nav_core::BaseGlobalPlanner">
+        <description>Dijkstra Global Planner</description>
+    </class>
+</library>
