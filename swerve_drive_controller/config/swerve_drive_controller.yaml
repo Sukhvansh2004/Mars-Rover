@@ -1,0 +1,51 @@
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 50
+
+swerve_drive_controller:
+  type: "swerve_drive_controller/SwerveDriveController"
+  front_left_wheel_joint: "wheel_4"
+  front_right_wheel_joint: "wheel_3"
+  rear_left_wheel_joint: "wheel_1"
+  rear_right_wheel_joint: "wheel_2"
+  front_left_steering_joint: "steer4"
+  front_right_steering_joint: "steer_3"
+  rear_left_steering_joint: "steer1"
+  rear_right_steering_joint: "steer2"
+  wheel_base: 0.5
+  track_width: 0.4
+
+/gazebo_ros_control:
+  pid_gains:
+    steer1:
+      p: 50
+      i: 1
+      d: 0.01
+    steer2:
+      p: 50
+      i: 1
+      d: 0.01
+    steer_3:
+      p: 50
+      i: 1
+      d: 0.01
+    steer4:
+      p: 50
+      i: 1
+      d: 0.01
+    wheel_1: #front_left_wheel
+      p: 10.0
+      i: 1
+      d: 0.0
+    wheel_2: #front_right_wheel
+      p: 10.0
+      i: 1
+      d: 0.0
+    wheel_3: #rear_left_wheel
+      p: 10.0
+      i: 1
+      d: 0.0
+    wheel_4: #rear_right_wheel
+      p: 10.0
+      i: 1
+      d: 0.0

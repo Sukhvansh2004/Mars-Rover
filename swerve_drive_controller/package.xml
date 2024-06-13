@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>swerve_drive_controller</name>
+  <version>0.0.0</version>
+  <description>The swerve_drive_controller package</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag -->
+  <maintainer email="sukhvansh@todo.todo">sukhvansh</maintainer>
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <license>TODO</license>
+
+  <!-- Url tags are optional, but multiple are allowed, one per tag -->
+  <!-- Example: -->
+  <!-- <url type="website">http://wiki.ros.org/swerve_drive_controller</url> -->
+
+  <!-- Author tags are optional, multiple are allowed, one per tag -->
+  <!-- Authors do not have to be maintainers, but could be -->
+  <!-- Example: -->
+  <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
+
+  <!-- The *depend tags are used to specify dependencies -->
+  <!-- Dependencies can be catkin packages or system dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>controller_interface</build_depend>
+  <depend>hardware_interface</depend>
+  <depend>tf</depend>
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <build_export_depend>nav_msgs</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>pluginlib</build_export_depend>
+  <build_export_depend>controller_interface</build_export_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>pluginlib</exec_depend>
+  <exec_depend>controller_interface</exec_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+    <pluginlib plugin="${prefix}/plugins/swerve_drive_controller_plugin.xml"/>
+  </export>
+</package>

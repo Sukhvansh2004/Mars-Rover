@@ -10,6 +10,13 @@
 		args="joint_state_controller mars_rover">
   </node>
 
+  <!-- <rosparam file="$(find swerve_drive_controller)/config/swerve_drive_controller.yaml" command="load"/>
+
+  <node name="controller_spawner" pkg="controller_manager"
+        type="spawner" output="screen" 
+        args="joint_state_controller swerve_drive_controller">
+  </node> -->
+  
   <!-- convert joint states to TF transforms for rviz, etc -->
   <node name="robot_state_publisher" pkg="robot_state_publisher"
 		type="robot_state_publisher" respawn="false" output="screen">
