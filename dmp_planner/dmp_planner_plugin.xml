@@ -1,0 +1,5 @@
+<library path="lib/libdmp_planner">
+    <class name="dmp_global_planner/DMPGlobalPlanner" type="dmp_global_planner::DMPGlobalPlanner" base_class_type="nav_core::BaseGlobalPlanner">
+        <description>DMP Global Planner</description>
+    </class>
+</library>

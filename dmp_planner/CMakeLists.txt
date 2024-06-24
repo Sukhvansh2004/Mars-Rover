@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(dijkstra_planner)
+project(dmp_planner)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
@@ -8,12 +8,14 @@ find_package(catkin REQUIRED COMPONENTS
   nav_core
   nav_msgs
   geometry_msgs
+  common_msgs
+  dmp
 )
 
 catkin_package(
   INCLUDE_DIRS include
-  LIBRARIES dijkstra_planner
-  CATKIN_DEPENDS roscpp pluginlib costmap_2d nav_core nav_msgs geometry_msgs
+  LIBRARIES dmp_planner
+  CATKIN_DEPENDS roscpp pluginlib costmap_2d nav_core nav_msgs geometry_msgs common_msgs dmp
 )
 
 include_directories(
@@ -21,16 +23,16 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_library(dijkstra_planner src/dijkstra_planner.cpp)
+add_library(dmp_planner src/dmp_planner.cpp)
 
-target_link_libraries(dijkstra_planner
+target_link_libraries(dmp_planner
   ${catkin_LIBRARIES}
 )
 
-install(TARGETS dijkstra_planner
+install(TARGETS dmp_planner
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 )
 
-install(FILES plugin.xml
+install(FILES dmp_planner_plugin.xml
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
