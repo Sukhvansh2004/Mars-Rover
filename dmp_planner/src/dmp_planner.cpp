@@ -1,5 +1,5 @@
 #include <pluginlib/class_list_macros.h>
-#include "dmp_global_planner.h"
+#include "dmp_planner.h"
 #include <dmp/GetDMPPlan.h>
 #include <dmp/SetActiveDMP.h>
 #include <string>

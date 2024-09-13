@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package>
+<package format="2">
   <name>dmp_planner</name>
   <version>0.0.0</version>
   <description>The DMP_planner package</description>
@@ -34,10 +34,10 @@
   <!-- Use depend as a shortcut for packages that are both build and exec dependencies -->
   <!--   <depend>roscpp</depend> -->
   <!--   Note that this is equivalent to the following: -->
-  <!--   <build_depend>roscpp</build_depend> -->
+  <!--   <depend>roscpp</depend> -->
   <!--   <exec_depend>roscpp</exec_depend> -->
-  <!-- Use build_depend for packages you need at compile time: -->
-  <!--   <build_depend>message_generation</build_depend> -->
+  <!-- Use depend for packages you need at compile time: -->
+  <!--   <depend>message_generation</depend> -->
   <!-- Use build_export_depend for packages you need in order to build against this package: -->
   <!--   <build_export_depend>message_generation</build_export_depend> -->
   <!-- Use buildtool_depend for build tool packages: -->
@@ -49,21 +49,15 @@
   <!-- Use doc_depend for packages you need only for building documentation: -->
   <!--   <doc_depend>doxygen</doc_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>roscpp</build_depend>
-  <build_depend>rospy</build_depend>
-  <build_depend>std_msgs</build_depend>
-  <build_depend>geometry_msgs</build_depend>
-  <build_depend>nav_msgs</build_depend>
-  <build_depend>common_msgs</build_depend>
-  <build_depend>dmp</build_depend>
-
-  <run_depend>roscpp</run_depend>
-  <run_depend>rospy</run_depend>
-  <run_depend>std_msgs</run_depend>
-  <run_depend>geometry_msgs</run_depend>
-  <run_depend>nav_msgs</run_depend>
-  <run_depend>common_msgs</run_depend>
-  <run_depend>dmp</run_depend>
+  <depend>roscpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <!-- <depend>common_msgs</depend> -->
+  <depend>dmp</depend>
+  <depend>pluginlib</depend>
+  <depend>costmap_2d</depend>
+  <depend>nav_core</depend>
+  <depend>common_msgs</depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
